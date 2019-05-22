@@ -1,0 +1,15 @@
+{
+  "name": "bmi_calc",
+  "version": "1.0.0",
+  "description": "Simple BMI Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abda Rafi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0"
+  }
+}
