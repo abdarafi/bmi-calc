@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple BMI Calculator</title>
+    <meta
+      name="description"
+      content="BMI Calculator made for learning purpose."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bulma CSS requirements -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.1/css/bulma.css"
+      integrity="sha256-uByAjQgKh5//Z/gDvbL7MWsDcbwX7d/KizVil6On1dQ="
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <!-- --- -->
+    <link rel="icon" href="icon/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Simple BMI Calculator</title>
-</head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Simple Body Mass Index Calculator</h1>
+        <p class="subtitle">Built for learning purpose.</p>
+        <form method="post">
+          <!-- bulma form -->
+          <div class="field">
+            <label class="label">Weight</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="berat"
+                placeholder="in KG (kilograms)."
+                required="true"
+              />
+            </div>
+          </div>
 
-<body>
-  <h1>Simple Body Mass Index Calculator</h1>
-  <h2>Made for belajar gan</h2>
-  <form method="post">
-    <input type="text" name="berat" placeholder="Berat Badan Anda"><span>kilogram (kg).</span>
-    <br>
-    <input type="text" name="tinggi" placeholder="Tinggi Badan Anda"><span>meter (m).</span>
-    <br>
-    <button type="submit" name="submit">Hitung BMI!</button>
-  </form>
-</body>
-
+          <div class="field">
+            <label class="label">Height</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="tinggi"
+                placeholder="in CM (centimeters)."
+                required="true"
+              />
+            </div>
+          </div>
+          <button class="button is-info" type="submit" name="submit">
+            Calculate BMI!
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
