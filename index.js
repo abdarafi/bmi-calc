@@ -26,7 +26,7 @@ app.post("/", function (req, res) {
   } else if (hasil > 18.5 && hasil < 24.9) {
     typeBody = "Normal";
   } else if (hasil >= 25) {
-    typeBody = "Obese";
+    typeBody = "Plus";
   } else {
     typeBody = "error";
   }
